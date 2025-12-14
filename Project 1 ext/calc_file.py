@@ -54,14 +54,14 @@ class MultiplyAll:
 
 # ---------------- FUNCTIONS ----------------
 def get_history():
-    with open("trial.csv", "r") as file:
+    with open("../project 1/trial.csv", "r") as file:
         for line in file:
             print(line)
 
 def history(operation, n1=None, n2=None, list1=None):
     new_rec = f"\n{operation}, {n1}, {n2}, {list1}"
     try:
-        with open("trial.csv", "a") as file:
+        with open("../project 1/trial.csv", "a") as file:
             file.write(new_rec)
 
         print("History updated.")
